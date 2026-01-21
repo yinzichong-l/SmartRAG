@@ -4,7 +4,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/PaiSmart?useSSL=false&serverTimezone=UTC
     username: root
-    password: 123456
+    password: admin
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
@@ -93,14 +93,14 @@ log4j:
 
 deepseek:
   api:
-    url: https://api.deepseek.com/v1
+    url: http://localhost:11431/v1
     key:
     # DeepSeek API Key
 
 embedding:
   api:
     url: https://dashscope.aliyuncs.com/compatible-mode/v1
-    key:    # 填入通义千问API key
+    key: sk-9c896d3f769a497bbe0e5dfc916ffab3   # 填入通义千问API key
     model: text-embedding-v4
     batch-size: 10  # 单次请求最大行数（DashScope限制为10）
     dimension: 2048  # 指定向量维度
