@@ -101,12 +101,12 @@ deepseek:
   api:
     url: https://api.deepseek.com/v1  # 本地是 http://localhost:11434/v1 官方：https://api.deepseek.com/v1
     model: deepseek-chat  # 本地: deepseek-r1:7b, 官方: deepseek-chat
-    key: sk-17ac694960f241729a8484a3a70e9489   # DeepSeek API Key 如果是本地就为空
+    key:   # DeepSeek API Key 如果是本地就为空
 
 embedding:
   api:
     url: https://dashscope.aliyuncs.com/compatible-mode/v1
-    key: sk-9c896d3f769a497bbe0e5dfc916ffab3    # 填入通义千问API key
+    key:    # 填入通义千问API key
     model: text-embedding-v4
     batch-size: 10  # 单次请求最大行数（DashScope限制为10）
     dimension: 2048  # 指定向量维度
